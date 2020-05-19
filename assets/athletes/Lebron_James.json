@@ -1,0 +1,185 @@
+{
+  "address": "0xd0a6E6C54DbC68Db5db3A091B171A77407Ff7ccf",
+  "stats": {
+    "age": "31",
+    "height": "1.70 M",
+    "team": "Barcelona",
+    "assists": "258",
+    "goals": "629",
+    "worth": "$400M",
+    "sponsors": ["Gatorade"],
+    "giving": "21%"
+  },
+  "banner": {
+    "id": "ce4fe6ef-166f-493a-a925-5760de898491",
+    "image": "https://i.imgur.com/yHTCnPa.png",
+    "url": "https://www.nba.com/"
+  },
+  "social": {
+    "facebook": "https://www.facebook.com/LeBron/",
+    "twitter": "https://twitter.com/KingJames",
+    "linkedin": null,
+    "instagram": "https://www.instagram.com/kingjames/"
+  },
+  "name": "LEBRON JAMES",
+  "symbol": "LEBJAM-DX",
+  "sport": "BASKETBALL",
+  "price": "134.09 ",
+  "currency": "$",
+  "quantity": 80,
+  "story": [
+    {
+      "photo": "https://i.imgur.com/eRsXtwl.png",
+      "text": "LeBron Raymone James Sr. is an American professional basketball player for the Los Angeles Lakers of the National Basketball Association (NBA). Often considered the best basketball player in the world and regarded by some as the greatest player of all time, his NBA accomplishments are extensive."
+    },
+    {
+      "photo": "https://i.imgur.com/w6RgfrM.png",
+      "text": "A prep-to-pro, James played high school basketball for St. Vincent–St. Mary High School in his hometown of Akron, Ohio, where he was heavily touted in the national media as a future NBA superstar. He joined the Cleveland Cavaliers in 2003 as the first overall draft pick. James quickly emerged as a league star and concluded his first season by winning the NBA Rookie of the Year Award. He would go on to establish himself as one of the premier players in the NBA with multiple accolades, including being given the NBA Most Valuable Player Award in 2009 and 2010. However, after falling short of the championship expectations set by the media, fans, and himself, James departed Cleveland in 2010 as a free agent to sign with the Miami Heat. This move was announced in an ESPN special titled The Decision, and is one of the most controversial free agent decisions in American sports history."
+    }
+  ],
+  "plan": [
+    {
+      "id": "f87484ae-09ac-4489-8a49-600817a2cd6c",
+      "title": "THE LEBRON JAMES\nFAMILY FOUNDATION",
+      "thumbnail": "https://i.imgur.com/p7RUUUd.png",
+      "text": "LeBron James opened his public school, the I Promise School, in Akron, Ohio. Kids who graduate from the school and meet specific standards will qualify for a full scholarship to the University of Akron, through the LeBron James Family Foundation."
+    },
+    {
+      "id": "02aba5b2-3250-4ffe-98e1-7143ee7bb1e9",
+      "title": "Training VLOG",
+      "thumbnail": "https://i.imgur.com/j4Vkv6y.png",
+      "text": "Lebron James has a workout routine and diet that is pretty much what you’d expect. The NBA star works out 5 to 7 days per week, eats healthy, and does fitness classes like versaclimber, spin and pilates to stay in shape.\nBusiness Insider’s US Editor-in-Chief Alyson Shontell recently sat down with LeBron James to talk about life after winning the NBA Finals.\nHis clear dominance on the court is also balanced by a busy off-court lifestyle. James says he enjoys going to a variety of workout classes to stay in shape.\nIn particular, the King says he enjoys versaclimber classes, which are popular in Los Angeles and essentially is workout on a step climber. He also practices pilates and enjoys spin classes. James says he'll work out 5 days a week, even when he's supposed to be resting up for the season, and often wakes up at 5 AM to exercise.\nDuring basketball season, James is working out 7 days a week and playing basketball every day, even on weekends."
+    }
+  ],
+  "news": [
+    {
+      "id": "ad266680-f91e-4713-97d6-f689af34ab12",
+      "title": "LA LAKERS SIGN LEBRON JAMES",
+      "thumbnail": "https://i.imgur.com/mAzdadp.png",
+      "text": "LeBron James’ next NBA chapter will be set on the West Coast. James will be playing for the Los Angeles Lakers on a four-year, $153.3 million contract. He will try to bring the storied franchise another championship.\nThe announcement was made through his agency, Klutch Sports Group, which announced the deal as $154 million.\nESPN’s Brian Windhorst reported that the fourth year is a player option. It is the longest deal James has signed since inking a six-year contract with the Miami Heat in 2010. His previous three deals were three years or shorter."
+    },
+    {
+      "id": "27ec3058-0d0b-470c-bd90-6fa933260aab",
+      "title": "NBA 2018-2019 SEASON TRANSFERS",
+      "thumbnail": "https://i.imgur.com/ELxkP7T.png",
+      "text": "The NBA never truly sleeps. Jimmy Butler’s trade request last week reminded us of that.\nThe request itself did not come as a surprise. Reports out of Minnesota this offseason have made it clear Butler is unhappy with the his current situation. He has grown frustrated with Karl Anthony-Towns and Andrew Wiggins as well as his current financial state. What is surprising, however, is Butler’s preference in teams: the Clippers, Knicks and Nets with Los Angeles taking the top spot on his list."
+    },
+    {
+      "id": "fafd0d22-e21b-4111-8190-e1728e17f3e9",
+      "title": "LEBRON JAMES VS MICHAEL JORDAN",
+      "thumbnail": "https://i.imgur.com/pC5892o.png",
+      "text": "Among active NBA players, the only one who has even a shot at contesting Michael Jordan’s status as the Greatest of All Time is LeBron James. Deep into his 15th season in the league, LeBron today matched Jordan’s regular season record of 866 consecutive games with double-digit points on the way to leading the Cleveland Cavaliers to a 118-105 win over the Charlotte Hornets.\nHaving solidified his status as the best player of this decade, James is leading a rejuvenated Cavaliers squad to the 3rd seed in the Eastern Conference this year while putting up 27.4 points, 8.6 rebounds and 9.1 assists per game. In terms of counting numbers, only Russell Westbrook is better than him this year!\nMichael Jordan also played 15 (albeit not full) seasons in the league like James, so this is probably the best time to gauge who is the greatest of all time. To do that, we are strictly using statistics as our basis here."
+    }
+  ],
+  "forum": [
+    {
+      "id": "515535af-c9b7-487b-a118-4f4747e7dee4",
+      "topic": {
+        "id": "59886d2f-c4ac-44c5-88c1-4dab83c14e3a",
+        "name": "NBA SEASON KICKS OFF"
+      },
+      "title": "New season transfers stats…",
+      "thumbnail": "https://i.imgur.com/pC5892o.png",
+      "category": "General Discussion",
+      "comments": 14,
+      "votes": 180,
+      "lastComment": {
+        "id": "d96ab371-c46b-4c02-ab61-9e785cfb9bcb",
+        "username": "SHIRO",
+        "time": "12:30am"
+      }
+    },
+
+    {
+      "id": "a97be7d9-4012-40f9-9f3a-95ce2ed8e8ed",
+      "topic": {
+        "id": "12ee5362-9673-4516-b8d8-a700dedca4e8",
+        "name": "LEBRON JAMES FAMILY FOUNDATION"
+      },
+      "title": "Lebron giving back to community",
+      "thumbnail": "https://i.imgur.com/pC5892o.png",
+      "category": "General Discussion",
+      "comments": 12,
+      "votes": 580,
+      "lastComment": {
+        "id": "3454939b-9343-4575-8632-56e52ac8f785",
+        "username": "Ironman",
+        "time": "15:30pm"
+      }
+    },
+    {
+      "id": "76e7c1a1-27da-4e7d-8844-f98014af85ae",
+      "topic": {
+        "id": "17d22be2-184f-4f42-b725-7cc14a491a1e",
+        "name": "LEBRON VS JORDAN"
+      },
+      "title": "The endless debate continues…",
+      "thumbnail": "https://i.imgur.com/ELxkP7T.png",
+      "category": "General Discussion",
+      "comments": 11,
+      "votes": 180,
+      "lastComment": {
+        "id": "50930c5b-b3f0-4ea1-9f49-6cc806b838ae",
+        "username": "Pablo",
+        "time": "17 May 2018"
+      }
+    },
+    {
+      "id": "ecb29f6f-6051-45d6-9715-eb18aea1c5a0",
+      "topic": {
+        "id": "a1a025a3-2087-4aaa-afe7-4af66025cbcf",
+        "name": "NIKE LAUNCHES LEBRON 16"
+      },
+      "title": "The Basketball shoes everyone wants",
+      "thumbnail": "https://i.imgur.com/ELxkP7T.png",
+      "category": "General Discussion",
+      "comments": 9,
+      "votes": 180,
+      "lastComment": {
+        "id": "f7ab1043-7850-42d8-bda1-3e82a3b52e63",
+        "username": "Johny007",
+        "time": "10:38am"
+      }
+    },
+    {
+      "id": "c06504f3-4e09-4f59-be65-8838903e070d",
+      "topic": {
+        "id": "1cf97336-ce27-4139-b615-f9a1e8f5dc6c",
+        "name": "LAKERS NEW SPONSOR: WISH"
+      },
+      "title": "The greatest move wish could make",
+      "thumbnail": "https://i.imgur.com/ww87Abh.png",
+      "category": "General Discussion",
+      "comments": 5,
+      "votes": 180,
+      "lastComment": {
+        "id": "7372da13-466e-4785-9289-40fa11d8afae",
+        "username": "Amaoko",
+        "time": "17:45pm"
+      }
+    }
+  ],
+  "store": [
+    {
+      "id": "117aa2ca-8e55-469a-96c0-a1c349301385",
+      "category": "2018 LA LAKERS",
+      "title": "Away Tank - James",
+      "thumbnail": "https://i.imgur.com/nGnP3oa.png",
+      "price": "$88.00"
+    },
+    {
+      "id": "2de7d564-8f49-41de-9c8c-3d89960a00ef",
+      "category": "2018 LA LAKERS",
+      "title": "Home Replica Tank",
+      "thumbnail": "https://i.imgur.com/0q6JnD5.png",
+      "price": "$78.00"
+    },
+    {
+      "id": "7d5cd164-7452-4889-83af-5d8d1aad09e1",
+      "category": "2019 NIKE",
+      "title": "Lebron 16",
+      "thumbnail": "https://i.imgur.com/1o2FfHw.png",
+      "price": "$250.00"
+    }
+  ]
+}

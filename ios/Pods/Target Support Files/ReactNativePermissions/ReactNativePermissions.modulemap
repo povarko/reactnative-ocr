@@ -1,0 +1,6 @@
+framework module ReactNativePermissions {
+  umbrella header "ReactNativePermissions-umbrella.h"
+
+  export *
+  module * { export * }
+}

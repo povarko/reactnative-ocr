@@ -1,0 +1,139 @@
+{
+  "banner": {
+    "id": "1e8dd043-0ed3-4d66-a3ec-3c0029b85bb3",
+    "image": "https://i.imgur.com/2WvXDgR.png",
+    "url": "https://www.underarmour.com/en-us/"
+  },
+  "social": {
+    "facebook": "https://www.facebook.com/TomBrady/",
+    "twitter": "https://twitter.com/tombrady",
+    "linkedin": null,
+    "instagram": "https://www.instagram.com/tombrady/"
+  },
+  "name": "Tom Brady",
+  "symbol": "TOMBRA-DX",
+  "sport": "AMERICAN FOOTBALL",
+  "price": "109.15",
+  "currency": "$",
+  "quantity": 40,
+  "story": [
+    {
+      "photo": "https://i.imgur.com/4Kq13NA.png",
+      "text": "Thomas Edward Patrick Brady Jr. (born August 3, 1977) is an American football quarterback for the New England Patriots of the National Football League (NFL).  He is one of only two players to win five Super Bowls (the other being defensive player Charles Haley) and the only player to win them all playing for one team."
+    },
+    {
+      "photo": "https://i.imgur.com/9l9fILl.png",
+      "text": "After playing college football for the University of Michigan, Brady was drafted by the Patriots in the sixth round of the 2000 NFL Draft. Due to his late draft selection, Brady is considered to be the biggest “steal” in the history of the NFL Draft In Brady’s sixteen seasons as a starter,[a] he has quarterbacked the Patriots to eight Super Bowl appearances, the most for any player in history. Brady is also one of only two quarterbacks to win the Super Bowl in their first season as a starter, the other being Kurt Warner."
+    }
+  ],
+  "plan": [
+    {
+      "id": "9005d8ad-a5ed-40a9-b730-8f8b58dfa4ca",
+      "title": "TOM BRADY SIGNS AUDI\nEDORSEMENT DEAL",
+      "thumbnail": "https://i.imgur.com/2IV0IC1.png",
+      "text": "It’s time to add Audi to Tom Brady’s expansive list of endorsements."
+    },
+    {
+      "id": "14e7d56b-e35e-4aee-a394-837bdabb1a1a",
+      "title": "Training VLOG",
+      "thumbnail": "https://i.imgur.com/onInpsV.png",
+      "text": "At age 40, Tom Brady shows no signs of slowing down in a game dominated by younger players. The New England Patriots quarterback tells Norah O’Donnell his performance is due to his unique fitness and diet regimen, described in his new book, “The TB12 Method: How to Achieve a Lifetime of Sustained Peak Performance,” in which he teaches the benefits of muscle pliability."
+    }
+  ],
+  "news": [
+    {
+      "id": "1b52336b-3c3f-44dc-8306-ccd7fa119dc9",
+      "title": "NEW ENGLAND PATRIOTS-SUPERBOWL",
+      "thumbnail": "https://i.imgur.com/2IV0IC1.png",
+      "text": "If you didn’t watch the Sunday Night Football showdown between the New England Patriots and Kansas City Chiefs, you missed a shootout for the ages. By the end of the night, one thing was clear — we aren’t likely to see two quarterback performances like this in the same game again any time soon.\nPatrick Mahomes, the rising star with the weight of NFL nation’s expectations on his shoulders, played fearlessly all night – breaking the game open with one big play after another in a wild second half that helped us easily forget an uncharacteristically difficult first-half for the sophomore QB."
+    },
+    {
+      "id": "916613f2-87a1-4678-829e-2b3db1046c02",
+      "title": "GISELE ON TOM’S RETIREMENT",
+      "thumbnail": "https://i.imgur.com/onInpsV.png",
+      "text": "Tom Brady is in the midst of his 18th season in the NFL and Express Sport is on hand to explain what his wife Gisele Bundchen thinks about the New England Patriots star retiring.\nBrady has spent his entire career with the Patriots after being selected in the sixth round of the 2000 NFL Draft.\nAnd he’s forged a reputation as one of the greatest quarterbacks of all time by guiding them to five Super Bowl wins.\nTom Brady has been named as Super Bowl MVP four times and will be eager to take home the accolade once again next February.\nBrady’s wife Gisele has been able to share in his achievements since they first started dating in December 2006."
+    },
+    {
+      "id": "4728e8fe-8825-47f2-b0f3-7466e1286a75",
+      "title": "Brady gets 200th regular season win \nvs. Chiefs",
+      "thumbnail": "https://i.imgur.com/4Kq13NA.png",
+      "text": "Patriots star Tom Brady made NFL history Sunday.\nBrady became the first quarterback to reach 200 regular-season wins in the NFL after guiding the Patriots to a thrilling 43-40 victory over the previously undefeated Chiefs.\nThe 41-year-old completed 24-of-35 passes for 340 yards and a touchdown in New England’s win."
+    }
+  ],
+  "forum": [
+    {
+      "id": "687e76bb-061f-4639-b8ba-fb7175376a8c",
+      "topic": {
+        "id": "94677277-2675-427d-8658-a2b38cb045f0",
+        "name": "TOM BRADY’S BEST BUDDY CHALLENGE"
+      },
+      "title": "Tom Brady Makes First Public Appearance",
+      "thumbnail": "https://i.imgur.com/2IV0IC1.png",
+      "category": "General Discussion",
+      "comments": 14,
+      "votes": 180,
+      "lastComment": {
+        "id": "b7da89b5-06c6-4f19-b615-c723a334f18a",
+        "username": "Shiro",
+        "time": "12:30am"
+      }
+    },
+    {
+      "id": "fad0419c-e0cf-4794-badd-5319e04cebe5",
+      "topic": {
+        "id": "538fc218-27fa-46f0-87a8-ee208d1db1c3",
+        "name": "NEW LAUNCH UNDER ARMOUR APPAREL"
+      },
+      "title": "Athlete Recovery Sleepwear",
+      "thumbnail": "https://i.imgur.com/onInpsV.png",
+      "category": "General Discussion",
+      "comments": 9,
+      "votes": 180,
+      "lastComment": {
+        "id": "5f719fc6-8d1a-479e-80b0-ec83be5de127",
+        "username": "Johny007",
+        "time": "10:38am"
+      }
+    },
+    {
+      "id": "0bd21a9b-4123-4d25-9177-b80395496cb6",
+      "topic": {
+        "id": "6dba2550-72b8-4ac2-a7cf-b9e547264a86",
+        "name": "AUDI PARTNERSHIP WITH BRADY"
+      },
+      "title": "Gifted Audi S8 for Voluntary work at..",
+      "thumbnail": "https://i.imgur.com/9l9fILl.png",
+      "category": "General Discussion",
+      "comments": 5,
+      "votes": 180,
+      "lastComment": {
+        "id": "b39d81e8-ab84-4cb2-977d-385f2e2279fc",
+        "username": "Amaoko",
+        "time": "17:45pm"
+      }
+    }
+  ],
+  "store": [
+    {
+      "id": "2c4e16b8-762a-4e76-afa6-94abdf7c4faf",
+      "category": "2018 PATRIOTS JERSEY",
+      "title": "Nike Replica Jersey",
+      "thumbnail": "https://i.imgur.com/WtZTHmQ.png",
+      "price": "$125.00"
+    },
+    {
+      "id": "86116f94-665f-409b-ae50-0f8a7f0991df",
+      "category": "2018 THE GOAT",
+      "title": "Nike The Goat T-Shirt",
+      "thumbnail": "https://i.imgur.com/fFzkd3r.png",
+      "price": "$89.00"
+    },
+    {
+      "id": "06a80e59-bf32-4eab-98db-109ae9e490a9",
+      "category": "2018 PATRIOTS CAP",
+      "title": "New Era 59Fifty Flatfront",
+      "thumbnail": "https://i.imgur.com/zxL5a5p.png",
+      "price": "$25.00"
+    }
+  ]
+}

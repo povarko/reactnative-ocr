@@ -1,0 +1,127 @@
+[
+  {
+    "id": "cb7f740f-d4ed-4d27-9fda-34052e6d13e9",
+    "topic": {
+      "id": "bcb0713d-9db3-4d95-9cb7-a52a455b3fac",
+      "name": "ARSENAL FC"
+    },
+    "title": "Arsene Wenger gone finally!",
+    "thumbnail": "https://i.imgur.com/1mg6kcQ.png",
+    "category": "General Discussion",
+    "comments": 14,
+    "votes": 180,
+    "lastComment": {
+      "id": "92fbf528-8a79-4b16-9458-c2fda962bd36",
+      "username": "SHIRO",
+      "time": "12:30 am"
+    }
+  },
+
+  {
+    "id": "b731777c-57de-48bf-8767-390624cca1f3",
+    "topic": {
+      "id": "309fedbb-46d1-4c0a-aecf-874b48196362",
+      "name": "BARCELONA FC"
+    },
+    "title": "UEFA Champion League Quarter Final",
+    "thumbnail": "https://i.imgur.com/GG8ilin.png",
+    "category": "General Discussion",
+    "comments": 12,
+    "votes": 580,
+    "lastComment": {
+      "id": "2248f63f-733d-44a1-afd2-f3acbda60600",
+      "username": "Ironman",
+      "time": "15:30 pm"
+    }
+  },
+
+  {
+    "id": "d07e3856-d288-427a-a7bb-ace42381368c",
+    "topic": {
+      "id": "3e86809c-000d-4231-94eb-409d0677cb58",
+      "name": "LIONEL MESSI"
+    },
+    "title": "The Greatest Ever?",
+    "thumbnail": "https://i.imgur.com/uFfW76s.png",
+    "category": "General Discussion",
+    "comments": 11,
+    "votes": 180,
+    "lastComment": {
+      "id": "eb418741-43f5-4343-8d43-fa6b7fdd6523",
+      "username": "Pablo",
+      "time": "17 May 2018"
+    }
+  },
+
+  {
+    "id": "6df5c5bb-4b08-4d57-a8d5-2a08dce494f9",
+    "topic": {
+      "id": "9e08347d-4a9e-4938-8acb-4a3cd1131793",
+      "name": "REDBULL RACING"
+    },
+    "title": "Max Verstappen Future Champion...",
+    "thumbnail": "https://i.imgur.com/MPW3Hpw.png",
+    "category": "General Discussion",
+    "comments": 9,
+    "votes": 180,
+    "lastComment": {
+      "id": "4b6cb5f5-6c41-4a56-bbff-ecdbc2eed128",
+      "username": "Johny007",
+      "time": "10:38am"
+    }
+  },
+
+  {
+    "id": "eb24703d-f14e-4bf3-8b23-b69b35e40160",
+    "topic": {
+      "id": "2aba04f8-1f96-4566-a96b-ca667ccf4f21",
+      "name": "SOUTH AFRICA SPRINGBOKS"
+    },
+    "title": "Will Rassie Deliver?",
+    "thumbnail": "https://i.imgur.com/X71DvBZ.png",
+    "category": "General Discussion",
+    "comments": 5,
+    "votes": 180,
+    "lastComment": {
+      "id": "c7c8f73f-bf7c-417f-9642-8b1d92f8ad04",
+      "username": "Amabokoboko",
+      "time": "17:45pm"
+    }
+  },
+
+  {
+    "id": "1f7b2991-f28f-4129-9e4e-46384a5459eb",
+    "topic": {
+      "id": "fe275aff-c37f-467b-80de-d4d19b22ab95",
+      "name": "FERNANDO ALONSO"
+    },
+    "title": "Hamilton VS Alonso – who wins?",
+    "thumbnail": "https://i.imgur.com/QeJO8OP.png",
+    "category": "General Discussion",
+    "comments": 4,
+    "votes": 889,
+    "lastComment": {
+      "id": "3a211a6e-81e4-45fb-aa09-6e33833a9a70",
+      "username": "Maranello1",
+      "time": "15:30pm"
+    }
+  },
+
+  {
+    "id": "b4f2c128-bc2d-401a-99b1-ee78275419c4",
+    "topic": {
+      "id": "c94f7722-a4b2-43f2-bb5a-91dca8c78644",
+      "name": "LEICESTER CITY FC"
+    },
+    "title": "One Season Glory?",
+    "thumbnail": "https://i.imgur.com/beKJNZZ.png",
+    "category": "General Discussion",
+    "comments": 4,
+    "votes": 681,
+    "lastComment": {
+      "id": "359ce5d7-21e7-408d-b01c-f1b4410a4cdc",
+      "username": "PintChirps",
+      "time": "8:10am"
+    }
+  }
+]

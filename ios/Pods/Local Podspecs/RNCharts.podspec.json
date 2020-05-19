@@ -1,0 +1,28 @@
+{
+  "name": "RNCharts",
+  "version": "0.5.2",
+  "summary": "A react-native charts support both android and ios.",
+  "authors": "wuxudong",
+  "homepage": "https://github.com/wuxudong/react-native-charts-wrapper",
+  "license": "MIT",
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source": {
+    "git": "https://github.com/wuxudong/react-native-charts-wrapper.git",
+    "tag": "0.5.2"
+  },
+  "source_files": "ios/ReactNativeCharts/**/*.{h,m,swift}",
+  "static_framework": true,
+  "dependencies": {
+    "React": [
+
+    ],
+    "SwiftyJSON": [
+      "5.0"
+    ],
+    "Charts": [
+      "3.3"
+    ]
+  }
+}

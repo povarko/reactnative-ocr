@@ -1,0 +1,185 @@
+{
+  "address": "0xd0a6E6C54DbC68Db5db3A091B171A77407Ff7ccf",
+  "stats": {
+    "age": "31",
+    "height": "1.70 M",
+    "team": "Barcelona",
+    "assists": "258",
+    "goals": "629",
+    "worth": "$400M",
+    "sponsors": ["Gatorade"],
+    "giving": "21%"
+  },
+  "banner": {
+    "id": "5551cfbc-99c4-4c11-a10b-7d3be8e7ffe5",
+    "image": "https://i.imgur.com/E45N5cC.png",
+    "url": "https://www.ufc.com/"
+  },
+  "social": {
+    "facebook": "https://www.facebook.com/thenotoriousmma/",
+    "twitter": "https://twitter.com/TheNotoriousMMA",
+    "linkedin": "https://www.linkedin.com/in/conor-mcgregor-13b2bb129",
+    "instagram": "https://www.instagram.com/thenotoriousmma/"
+  },
+  "name": "CONOR McGREGOR",
+  "symbol": "CONMCG-DX",
+  "sport": "MMA",
+  "price": "108.79",
+  "currency": "$",
+  "quantity": 80,
+  "story": [
+    {
+      "photo": "https://i.imgur.com/dtznXo8.png",
+      "text": "Lionel Andrés Messi Cuccittini is an Argentine professional footballer who plays as a forward and captains both Spanish club Barcelona and the Argentina national team. Often considered the best player in the world and regarded by many as one of the greatest players of all time, Messi has won a record-tying five Ballon d'Or awards, four of which he won consecutively, and a record five European Golden Shoes."
+    },
+    {
+      "photo": "https://i.imgur.com/M8ahlak.png",
+      "text": "Conor Anthony McGregor is an Irish professional mixed martial artist and boxer. He is the former Ultimate Fighting Championship featherweight and lightweight champion. He has also competed as a welterweight in mixed martial arts, and light middleweight in boxing."
+    }
+  ],
+  "plan": [
+    {
+      "id": "b0b10d89-65c4-46fc-a268-b5b9c26272bb",
+      "title": "NEW UFC KIT SPONSOR",
+      "thumbnail": "https://i.imgur.com/4gDbkxU.png",
+      "text": "Tweaks to the UFC’s tiered Reebok sponsorship structure are part of the promotion’s newest policy changes, ESPN reported Friday. Under the new structure, athletes with three or less fights in the UFC will receive a Reebok sponsorship stipend of $3,500 per fight, while athletes with four or five Octagon fights will earn $5,000. Previously, both of those categories were encompassed under one sponsorship tier, which paid out $2,500 in Reebok earnings per fight."
+    },
+    {
+      "id": "a038a0a8-77fa-4b9d-9ca3-1dba1b9086dc",
+      "title": "Training VLOG",
+      "thumbnail": "https://i.imgur.com/rtxot2o.png",
+      "text": "The UFC Octagon separates human weapons from the rest of the human race. It’s where elite mixed martial arts (MMA) athletes meet to test themselves, and 145-pound champion Conor McGregor is leading the charge.\nThere’s something unique about McGregor. He has an aura surrounding him that makes everything he touches turn to gold in the sport of MMA. He’s got an energy like Arnold Schwarzenegger had when he stepped into the gym, or when Michael Jordan took to the basketball court. He’s known as “The Notorious” for a reason."
+    }
+  ],
+  "news": [
+    {
+      "id": "3043619e-0835-4008-8ffd-ecd078d29b06",
+      "title": "McGREGOR SUSPENDED",
+      "thumbnail": "https://i.imgur.com/0dr93id.png",
+      "text": "Conor McGregor and Khabib Nurmagomedov will be temporarily suspended on Monday ahead of a Nevada Athletic Commission hearing and investigation into last weekend’s post-fight brawl, according to multiple reports on Friday.\nBob Bennett, executive director of the commission, said a temporary ban would be put into place on Monday ahead of the group’s October 24 meeting, which would feature a hearing on whether or not the mixed martial arts fighters should be indefinitely suspended pending the results of an investigation into the aftermath of the UFC melee October 6."
+    },
+    {
+      "id": "05849a1f-5e76-4741-b671-eea973ab8b52",
+      "title": "KHABIB VICTORY",
+      "thumbnail": "https://i.imgur.com/QaUcnPf.png",
+      "text": "Conor McGregor is “all over the place” following his defeat by Khabib Nurmagomedov at UFC 229 last weekend, the Irishman’s coach has admitted.\nMcGregor was soundly beaten by Nurmagomedov last weekend, dominated on the ground in the first two rounds before tapping out in the fourth.\nHe then became involved in an altercation with two of Nurmagomedov’s team-mates immediately after his loss, eventually leaving the T-Mobile Arena surrounded by police officers and security guards.\nThe Nevada State Athletic Commission are still investigating the incident."
+    },
+    {
+      "id": "139c7d4d-60b6-4869-b374-02c429f4b3ce",
+      "title": "THE DETAILS ON KHABIB GRUDGE",
+      "thumbnail": "https://i.imgur.com/M8ahlak.png",
+      "text": "Conor McGregor now has a week of reflection following his brutal defeat to Khabib Nurmagomedov and the chaotic scenes that marred UFC 229.\nThe Irishman still won, sort of, despite the loss, picking up close to £38m once PPV numbers are settled.\nHis future remains unclear, with a rematch his preferred option.\nNext week will likely be more relaxing as the dust finally settles, but McGregor will not stay in hiding for long."
+    }
+  ],
+  "forum": [
+    {
+      "id": "defb51db-a5cd-4a8b-8c2e-ee89a502a762",
+      "topic": {
+        "id": "429c5b6f-1d7c-4d25-bfb4-e44249b3628e",
+        "name": "REEBOK NEW UFC KIT SPONSOR"
+      },
+      "title": "Its about time…",
+      "thumbnail": "https://i.imgur.com/ulT20kn.png",
+      "category": "General Discussion",
+      "comments": 14,
+      "votes": 180,
+      "lastComment": {
+        "id": "40c07888-1117-4365-8020-783e33b12b00",
+        "username": "SHIRO",
+        "time": "12:30 am"
+      }
+    },
+
+    {
+      "id": "2b2b3f3c-fff2-4591-ac78-490404acd4c9",
+      "topic": {
+        "id": "f676db8a-caeb-4996-ae80-438f4a6c3c9a",
+        "name": "25 YEARS OF UFC"
+      },
+      "title": "Taking us back to beginning..",
+      "thumbnail": "https://i.imgur.com/QaUcnPf.png",
+      "category": "General Discussion",
+      "comments": 12,
+      "votes": 580,
+      "lastComment": {
+        "id": "bc573b95-9007-4b1d-9482-d008160a73c0",
+        "username": "Ironman",
+        "time": "15:30 pm"
+      }
+    },
+    {
+      "id": "50274502-6ac8-461d-96cf-47a3a9d3007a",
+      "topic": {
+        "id": "372f5610-ceff-477a-8681-2d72b8e2ee9f",
+        "name": "CONOR McGREGOR VS KHABIB"
+      },
+      "title": "Well deserved or luck?",
+      "thumbnail": "https://i.imgur.com/PHsVAA6.png",
+      "category": "General Discussion",
+      "comments": 11,
+      "votes": 180,
+      "lastComment": {
+        "id": "e74ac5dd-6bad-45be-b7f9-4dd4b75ad9cc",
+        "username": "Pablo",
+        "time": "17 May 2018"
+      }
+    },
+    {
+      "id": "63ab7a51-6f4c-4af7-a370-af20b7f02043",
+      "topic": {
+        "id": "f1d1d99d-12e2-4ae5-86c1-207619dae03f",
+        "name": "ULTIMATE FIGHTING CHAMPIONSHIP"
+      },
+      "title": "Las Vegas the place to be..",
+      "thumbnail": "https://i.imgur.com/QaUcnPf.png",
+      "category": "General Discussion",
+      "comments": 9,
+      "votes": 180,
+      "lastComment": {
+        "id": "075037a7-0618-4bab-9038-a0a0e91887fd",
+        "username": "Johny007",
+        "time": "10:38am"
+      }
+    },
+    {
+      "id": "fbdd5374-e560-4ab9-ae75-f7459321c010",
+      "topic": {
+        "id": "7eadd6f8-8238-4bb4-9f38-363a734fe491",
+        "name": "NEW REEBOK UFC APPAREL"
+      },
+      "title": "All new apparel launch.. Media coverage",
+      "thumbnail": "https://i.imgur.com/PHsVAA6.png",
+      "category": "General Discussion",
+      "comments": 5,
+      "votes": 180,
+      "lastComment": {
+        "id": "c99b73ea-db8c-42f9-b8fa-f5237dd3c17d",
+        "username": "Amaoko",
+        "time": "17:45pm"
+      }
+    }
+  ],
+  "store": [
+    {
+      "id": "fc5d214f-6ca3-4f55-9092-79f2ced76a03",
+      "category": "REEBOK UFC",
+      "title": "McGregor UFC Hoodie",
+      "thumbnail": "https://i.imgur.com/XawCmvy.png",
+      "price": "$185.00"
+    },
+    {
+      "id": "b1c1318b-fc67-47a9-8805-ae2498e027af",
+      "category": "REEBOK UFC",
+      "title": "McGregor UFC Jersey",
+      "thumbnail": "https://i.imgur.com/58ADY65.png",
+      "price": "$99.00"
+    },
+    {
+      "id": "46c95e2c-5952-4405-ad88-9b8bf91a7626",
+      "category": "REEBOK PUMP",
+      "title": "McGregor UFC Ltd Edition",
+      "thumbnail": "https://i.imgur.com/WfUwaU3.png",
+      "price": "$150.00"
+    }
+  ]
+}
