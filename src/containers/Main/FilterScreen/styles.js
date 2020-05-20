@@ -34,11 +34,19 @@ export default EStylesheet.create({
   },
 
   statusIcon: {
-    width: 10,
-    height: 10,
-    // backgroundColor: Colors.forestGreen,
-    borderRadius: 5
-    // borderWidth: 1,
+    width: 18,
+    height: 18,
+    borderRadius: 9,
+    borderColor: "#cac8c8",
+    borderWidth: 1
+  },
+
+  statusEmptyIcon: {
+    width: 18,
+    height: 18,
+    borderRadius: 9,
+    borderColor: "#cac8c8",
+    borderWidth: 1
   },
 
   background: {
@@ -83,12 +91,22 @@ export default EStylesheet.create({
     alignSelf: "center"
   },
   button: {
-    width: 290,
-    height: 48,
-    borderRadius: 25,
-    backgroundColor: "transparent",
+    borderRadius: 10,
     borderWidth: 1,
-    borderColor: Colors.mainColor
+    borderColor: "#26C91E",
+    marginTop: 30,
+    marginHorizontal: 20,
+    height: 45,
+    backgroundColor: Colors.mainColor,
+    borderWidth: 1,
+    borderColor: "#FFF"
+  },
+  buttonTitle: {
+    color: Colors.btnTitleColor,
+    fontSize: 19,
+    letterSpacing: 1,
+    // textTransform: "uppercase",
+    fontFamily: Fonts.type.rajdhaniSemibold
   },
   buttonText: {
     fontFamily: Fonts.type.rajdhaniBold,

@@ -7,8 +7,7 @@ import {
 
 export default EStylesheet.create({
   container: {
-    width: wp("80%"),
-    marginBottom: 15
+    width: wp("80%")
   },
   inputContainer: {
     borderWidth: 1,
@@ -24,8 +23,7 @@ export default EStylesheet.create({
   input: {
     flex: 1,
     color: "#000",
-    fontSize: "1.25rem",
-    fontFamily: Fonts.type.rajdhani
+    fontSize: "1.20rem"
   },
   icon: {
     marginRight: 8,

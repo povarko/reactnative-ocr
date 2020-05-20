@@ -1,4 +1,8 @@
 const colors = {
+  statusUnpaid: "#00eaff",
+  statusPaid: "#0f0",
+  statusAll: "#8f8e8e",
+  statusIncomplete: "#cac8c8",
   malachite: "#26C91E",
   deepForestGreen: "#092407",
   forestGreen: "#24891F",

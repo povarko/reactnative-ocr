@@ -27,7 +27,7 @@ export default ({
         <TextInput
           autoCapitalize="none"
           style={[styles.input, inputStyle, { padding: 0 }]}
-          placeholderTextColor="#333"
+          placeholderTextColor="#9e9d9d"
           {...rest}
         />
       </View>

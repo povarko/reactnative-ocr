@@ -1,4 +1,6 @@
 const icons = {
+  plus: require("@Assets/icons/plus.png"),
+  goarrow: require("@Assets/icons/goarrow.png"),
   filter: require("@Assets/icons/filter.png"),
   addreceipt: require("@Assets/icons/add-receipt.png"),
   spinner: require("@Assets/icons/spinner.png"),

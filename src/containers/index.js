@@ -60,7 +60,10 @@ export {
 
 export {
   MainScreen,
-  EditScreen
+  EditScreen,
+  CategoryScreen,
+  ViewScreen,
+  FilterScreen
 } from "./Main";
 
 export {

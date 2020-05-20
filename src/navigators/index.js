@@ -9,6 +9,9 @@ import {
   LoginScreen,
   MainScreen,
   EditScreen,
+  ViewScreen,
+  FilterScreen,
+  CategoryScreen,
   AuthLoadingScreen,
   ForgotPasswordScreen,
   PasswordResetEmailSentScreen,
@@ -29,7 +32,10 @@ import { BuySellScreen } from "@AppContainers";
 const MainStackNavigator = createStackNavigator(
   {
     MainScreen: MainScreen,
+    ViewScreen: ViewScreen,
     EditScreen: EditScreen,
+    FilterScreen: FilterScreen,
+    CategoryScreen: CategoryScreen,
     MainTab: { screen: MainTabNavigaor, path: "" },
     VirtualShareCertificate: VirtualShareCertificateScreen,
     BuySellCertificate: BuySellScreen,
@@ -37,16 +43,19 @@ const MainStackNavigator = createStackNavigator(
   },
   {
     headerMode: "screen",
-    initialRouteName: "MainScreen"
+    initialRouteName: "FilterScreen"
   },
   {
-    header: ({scene, previous, navigation}) => {
-      const {options} = scene.descriptor;
-      const title = options.headerTitle !== undefined ? options.headerTitle : options.title !== undefined ? options.title : scene.route.name;
-      
-      return (
-        <p>{title}</p>
-      )
+    header: ({ scene, previous, navigation }) => {
+      const { options } = scene.descriptor;
+      const title =
+        options.headerTitle !== undefined
+          ? options.headerTitle
+          : options.title !== undefined
+          ? options.title
+          : scene.route.name;
+
+      return <p>{title}</p>;
     }
   }
 );

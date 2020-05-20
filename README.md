@@ -1,4 +1,4 @@
-# XSport Mobile App
+# Receipts Mobile App
 
 ## Installation
 

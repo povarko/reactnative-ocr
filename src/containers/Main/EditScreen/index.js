@@ -63,86 +63,143 @@ class EditScreen extends Component {
     if (loading) return;
     if (this.isValidForm()) {
       const { email, password, firstName, lastName } = this.state;
-      
     }
   };
 
   renderItems = ({ item, index }) => {
-    const imageurl =
-      "https://homepages.cae.wisc.edu/~ece533/images/boat.png";
+    const imageurl = "https://homepages.cae.wisc.edu/~ece533/images/boat.png";
 
     return (
       <TouchableOpacity
         activityOpacity={0.8}
         // style={styles.userBoard}
-        onPress={() => {
-          
-        }}
+        onPress={() => {}}
       >
         {/* <View style={{backgroundColor:"#333", flex: 1, marginBottom: 80}}> */}
-          <View style={{marginLeft: 20, marginRight: 20}}>
-            <View style={styles.line} />
-            <View style={[{paddingTop: 15, paddingBottom: 15}, styles.row]}>
-              <Image
-                source={{ uri: imageurl }}
-                style={styles.roundimg}
-                resizeMode={"cover"}
-              />
-              <View style={{marginLeft: 10, flex: 1}}>
-                  <View style={[styles.row, { justifyContent: "space-between" }]}>
-                    <Text style={{color: "#000", fontSize: 16}}>
-                      Eureka Operations Pty Ltd
-                    </Text>
-                    <Text style={{color: "#555"}}>
-                      $30.00
-                    </Text>
-                  </View>
-                  <Text style={{color: "#555", marginTop: 1, marginBottom: 1}}>
-                    Travel Dommestic
-                  </Text>
+        <View style={{ marginLeft: 20, marginRight: 20, height: 60 }}>
+          <View style={styles.line} />
+          <View style={[styles.row]}>
+            {index === 0 && (
+              <View style={{ flex: 1 }}>
+                <View
+                  style={[
+                    styles.row,
+                    { justifyContent: "space-between", paddingTop: 20 }
+                  ]}
+                >
                   <View style={styles.row}>
-                    <View style={[{color: Colors.forestGreen}, styles.statusIcon]}>                                                            
-                    </View>
-                    <Text style={{color: "#555", marginLeft: 10, fontSize: 12}}>
-                      16/05/2020
+                    <View
+                      style={[
+                        { marginRight: 10 },
+                        styles.statusIcon,
+                        { backgroundColor: Colors.statusUnpaid }
+                      ]}
+                    />
+                    <Text style={{ color: "#000", fontSize: 16 }}>
+                      {item.content}
                     </Text>
                   </View>
-              </View>  
-            </View>
+
+                  <Image source={Icons.goarrow} />
+                </View>
+              </View>
+            )}
+            {index === 1 && (
+              <View style={{ flex: 1 }}>
+                <View
+                  style={[
+                    styles.row,
+                    { justifyContent: "space-between", paddingTop: 20 }
+                  ]}
+                >
+                  <Text style={{ color: "#000", fontSize: 16 }}>
+                    {item.content}
+                  </Text>
+
+                  <Image source={Icons.goarrow} />
+                </View>
+              </View>
+            )}
+            {index > 1 && (
+              <View style={{ flex: 1 }}>
+                <Text style={{ color: "#555", marginBottom: 1, marginTop: 10 }}>
+                  {item.title}
+                </Text>
+                {/* <View style={styles.row}>
+                      <View style={[{color: Colors.forestGreen}, styles.statusIcon]}>                                                            
+                      </View>
+                      <Text style={{color: "#555", marginLeft: 10, fontSize: 12}}>
+                        16/05/2020
+                      </Text>
+                    </View> */}
+                <View style={[styles.row, { justifyContent: "space-between" }]}>
+                  <Text style={{ color: "#000", fontSize: 16 }}>
+                    {item.content}
+                  </Text>
+                  {!item.price === false && <Text>{item.price}</Text>}
+                </View>
+              </View>
+            )}
           </View>
+        </View>
         {/* </View> */}
       </TouchableOpacity>
-    )
+    );
   };
 
   render() {
     const isValidForm = this.isValidForm();
     const { error } = this.props;
 
-    const dummy = [1, 2, 3, 4, 5, 6, 7, 8];
-    const imageurl =
-      "https://homepages.cae.wisc.edu/~ece533/images/boat.png";
+    const dummy = [
+      { title: "Status", content: "Unpaid" },
+      { title: "Category", content: "Assign Category" },
+      { title: "Date", content: "09/05/2020" },
+      { title: "Receept Number", content: "1838563" },
+      { title: "Invoiced by", content: "Eureka Operations Pty Ltd" },
+      { title: "Item 1", content: "Unleaded Petrol", price: "$30.00" }
+    ];
+    const imageurl = "https://homepages.cae.wisc.edu/~ece533/images/boat.png";
 
     return (
       <ImageBackground style={styles.container}>
-          <SafeAreaView>
-            <View style={{display: "flex", height: '100%'}}>            
-              <View style={styles.overview}>                
-                <Image
-                  source={{ uri: imageurl }}
-                  style={{width: '100%', height: '100%'}}
-                  resizeMode={"cover"}
-                />
-              </View>
-            
-              <FlatList
-                data={dummy}
-                renderItem={this.renderItems}
-                keyExtractor={(item, index) => index.toString()}
+        <SafeAreaView>
+          <View style={{ display: "flex", height: "100%" }}>
+            <View style={styles.overview}>
+              <Image
+                source={{ uri: imageurl }}
+                style={{ width: "100%", height: "100%" }}
+                resizeMode={"cover"}
               />
-              
             </View>
-          </SafeAreaView>
+
+            {/* <View style={{marginLeft: 20, marginRight: 20, height: 60, alignItems: 'center'}}>
+                <View style={styles.line} />
+                <View style={[styles.row]}>              
+                  <View style={[{flex: 1}, styles.row, {justifyContent: 'space-between'}]}>                      
+                      <View style={styles.row}>
+                        <View style={[{color: Colors.forestGreen}, styles.statusIcon]}>                                                            
+                        </View>
+                        <Text style={{color: "#555", marginLeft: 10, fontSize: 12}}>
+                          Unpaid
+                        </Text>
+                      </View>
+                      <View style={[styles.row, { justifyContent: "space-between" }]}>
+                        <Text style={{color: "#000", fontSize: 16}}>
+                          ->
+                        </Text>                                          
+                      </View>
+                  </View>  
+                </View>
+              </View> */}
+
+            <FlatList
+              data={dummy}
+              renderItem={this.renderItems}
+              keyExtractor={(item, index) => index.toString()}
+            />
+          </View>
+        </SafeAreaView>
       </ImageBackground>
     );
   }

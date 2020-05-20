@@ -8,8 +8,8 @@ import {
 export default EStylesheet.create({
   overview: {
     width: "100%",
-    height: 180,
-    backgroundColor: "#f3f3f3",
+    height: 70,
+    // backgroundColor: "#f3f3f3",
     // display: "flex",
     alignItems: "center",
     justifyContent: "center"
@@ -19,10 +19,16 @@ export default EStylesheet.create({
     // flexDirection: "row",
     // alignItems: "center"
   },
+
   line: {
     width: wp("100%"),
     height: 1,
     backgroundColor: "#c8c8ca"
+  },
+
+  addnew: {
+    width: wp("100%") - 40,
+    borderRadius: 14
   },
 
   roundimg: {
@@ -39,6 +45,14 @@ export default EStylesheet.create({
     // backgroundColor: Colors.forestGreen,
     borderRadius: 5
     // borderWidth: 1,
+  },
+
+  statusEmptyIcon: {
+    width: 10,
+    height: 10,
+    borderRadius: 5,
+    borderColor: "#cac8c8",
+    borderWidth: 1
   },
 
   background: {
