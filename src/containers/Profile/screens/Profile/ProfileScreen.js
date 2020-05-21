@@ -11,7 +11,13 @@ import {
   Text
 } from "react-native";
 import { SafeAreaView } from "react-navigation";
-import { SideMenu, Input, Button, PickLocation } from "@AppComponents";
+import {
+  SideMenu,
+  Input,
+  Button,
+  PickLocation,
+  HeaderBar
+} from "@AppComponents";
 import { Images, Icons, Colors } from "@AppTheme";
 import ImagePicker from "react-native-image-crop-picker";
 import { Avatar } from "react-native-elements";
@@ -26,6 +32,33 @@ import { authActions } from "@AppRedux/actions";
 import { connect } from "react-redux";
 
 export class ProfileScreen extends Component {
+  static navigationOptions = {
+    title: "Profile",
+    // headerTitleStyle: {
+    //   fontWeight: 'normal',
+    // },
+    headerRight: (
+      <TouchableOpacity
+        activityOpacity={0.8}
+        // style={styles.userBoard}
+        onPress={() => alert("This is a button!")}
+        style={{ paddingRight: 20 }}
+      >
+        <Image source={Icons.goarrow} />
+      </TouchableOpacity>
+    ),
+    headerLeft: (
+      <TouchableOpacity
+        activityOpacity={0.8}
+        // style={styles.userBoard}
+        onPress={() => alert("This is a button!")}
+        style={{ paddingLeft: 20 }}
+      >
+        <Text style={{ color: "#02d0e3", fontSize: 16 }}>Edit</Text>
+      </TouchableOpacity>
+    )
+  };
+
   constructor(props) {
     super(props);
     console.log(props);
@@ -146,7 +179,7 @@ export class ProfileScreen extends Component {
   }
 
   render() {
-    const title = "profile";
+    const title = "Profile";
     const usernameTaken = this.usernameTaken();
 
     const { firstName, lastName, username, country, city } = this.state;
@@ -154,118 +187,166 @@ export class ProfileScreen extends Component {
 
     return (
       <SafeAreaView style={styles.container}>
-        <SideMenu title={title}>
-          <ScrollView style={styles.content}>
-            <ImageBackground
-              resizeMode="cover"
-              source={Images.backgroundSmall}
-              style={styles.headerBackground}
-            >
-              <View style={styles.header}>
-                <View style={{ width: 30 }} />
-                <Text style={styles.title}>{title}</Text>
-                <Image source={Icons.alarm} style={styles.icons} />
-              </View>
-              <View style={styles.avatarContainer}>
-                <Avatar
-                  source={this.getAvatar()}
-                  rounded
-                  size="large"
-                  onPress={this.pickImage}
-                  size={hp("35%") - 120}
-                  containerStyle={styles.avatar}
-                />
-                <Image source={Icons.userEdit} style={styles.avatarIcon} />
-              </View>
-            </ImageBackground>
+        {/* <HeaderBar
+          // {...headerProps}
+          onMenuPress={this.onOpen}
+          menuIcon={this.state.isOpen ? Icons.arrowRight : Icons.menu}
+        /> */}
+        {/* <SideMenu title={title}> */}
+        <ScrollView style={styles.content}>
+          <View style={styles.avatarContainer}>
+            <Avatar
+              source={this.getAvatar()}
+              rounded
+              size="large"
+              onPress={this.pickImage}
+              size={hp("35%") - 120}
+              containerStyle={styles.avatar}
+            />
+            <Image source={Icons.userEdit} style={styles.avatarIcon} />
+          </View>
 
-            <View style={styles.inputContainer}>
-              <View style={styles.usernameContainer}>
-                <TextInput
-                  style={[styles.inputLarge, { flex: 0.9 }]}
-                  placeholder="Username"
-                  value={username}
-                  placeholderTextColor="#FFF"
-                  onChangeText={this.onUsernameChange}
-                />
-                <View style={{ flex: 0.1, alignItems: "flex-end" }}>
-                  {!usernameTaken ? (
-                    <Image
-                      source={Icons.userVerified}
-                      style={[styles.icons, { tintColor: Colors.malachite }]}
-                    />
-                  ) : (
-                    <Image
-                      source={Icons.cancelCircle}
-                      style={[styles.icons, { tintColor: "red" }]}
-                    />
-                  )}
-                </View>
-              </View>
-              {usernameTaken ? (
-                <Text style={styles.error}>
-                  This Username has already been taken.
+          <View style={styles.inputContainer}>
+            <View style={{ marginLeft: 20, marginRight: 20, marginBottom: 20 }}>
+              <View style={{ flex: 1, marginBottom: 10 }}>
+                <Text
+                  style={{
+                    color: "#98989b",
+                    marginBottom: 1,
+                    marginTop: 20
+                  }}
+                >
+                  First Name
                 </Text>
-              ) : null}
+                <Text style={{ color: "#000", fontSize: 16, marginTop: 5 }}>
+                  Sam{firstName}
+                </Text>
+              </View>
+              <View style={styles.line} />
+              <View style={{ flex: 1, marginBottom: 10 }}>
+                <Text
+                  style={{
+                    color: "#98989b",
+                    marginBottom: 1,
+                    marginTop: 10
+                  }}
+                >
+                  Surname
+                </Text>
+                <Text style={{ color: "#000", fontSize: 14, marginTop: 5 }}>
+                  Simith{lastName}
+                </Text>
+              </View>
+              <View style={styles.line} />
 
-              <View style={styles.namesContainer}>
-                <View style={{ marginRight: 8 }}>
-                  <Input
-                    placeholder="Ben"
-                    value={firstName}
-                    label="First Name"
-                    placeholderTextColor="#FFF"
-                    labelStyle={styles.label}
-                    inputStyle={styles.inputSmall}
-                    style={styles.inputItem}
-                    onChangeText={this.onFirstNameChange}
-                  />
-                </View>
-                <View style={{ marginLeft: 8 }}>
-                  <Input
-                    placeholder="Dover"
-                    value={lastName}
-                    label="Last Name"
-                    placeholderTextColor="#FFF"
-                    labelStyle={styles.label}
-                    inputStyle={styles.inputSmall}
-                    style={styles.inputItem}
-                    onChangeText={this.onLastNameChange}
-                  />
-                </View>
+              <View style={{ flex: 1, marginBottom: 10 }}>
+                <Text
+                  style={{
+                    color: "#98989b",
+                    marginBottom: 1,
+                    marginTop: 10
+                  }}
+                >
+                  Email
+                </Text>
+                <Text style={{ color: "#000", fontSize: 14, marginTop: 5 }}>
+                  sam.smith@sample.com{lastName}
+                </Text>
+              </View>
+              <View style={styles.line} />
+
+              <View style={{ flex: 1, marginBottom: 0 }}>
+                <Text
+                  style={{
+                    color: "#98989b",
+                    marginBottom: 1,
+                    marginTop: 10
+                  }}
+                >
+                  Password
+                </Text>
+                <Input
+                  style={{
+                    border: 0,
+                    paddingLeft: 0,
+                    paddingTop: 0,
+                    paddingBottom: 0,
+                    marginBottom: 0,
+                    height: 30,
+                    borderColor: "#f7f7f7"
+                  }}
+                  placeholder="Password"
+                  secureTextEntry
+                  onChangeText={this.onPasswordChange}
+                  textContentType="password"
+                  value="ddddd"
+                />
+              </View>
+              <View style={styles.line} />
+
+              <View
+                style={{
+                  marginTop: 50,
+                  marginBottom: 50,
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center"
+                }}
+              >
+                <Text style={{ color: "#808080" }} onPress={this.openTerms}>
+                  Privacy Policy | Terms & Conditions
+                </Text>
               </View>
 
-              <View>
-                <Text style={styles.locationLabel}>Location</Text>
-                <View style={styles.location}>
-                  <Image
-                    source={Icons.location}
-                    resizeMode="contain"
-                    style={{ width: 18, height: 18 }}
-                  />
+              <TouchableOpacity
+                activityOpacity={0.8}
+                // style={styles.userBoard}
+                onPress={() => {}}
+              >
+                <View style={{ flex: 1, height: 40 }}>
                   <Text
-                    style={styles.locationTitle}
-                    numberOfLines={1}
-                    ellipsizeMode="tail"
+                    style={{
+                      color: "#000",
+                      marginBottom: 1,
+                      marginTop: 10
+                    }}
                   >
-                    {this.getLocationText() || city + ", " + country}
+                    Help & Support
                   </Text>
-                  <TouchableOpacity onPress={() => this.locRef.toggle()}>
-                    <Text style={styles.locationChange}>(Change)</Text>
-                  </TouchableOpacity>
                 </View>
-              </View>
+              </TouchableOpacity>
+              <View style={styles.line} />
 
-              {error && <Text style={styles.error}>{error}</Text>}
-              <Button
+              <TouchableOpacity
+                activityOpacity={0.8}
+                // style={styles.userBoard}
+                onPress={() => {}}
+              >
+                <View style={{ flex: 1, marginTop: 10, height: 40 }}>
+                  <Text
+                    style={{
+                      color: "#00eaff",
+                      marginBottom: 1,
+                      marginTop: 10
+                    }}
+                  >
+                    Log Out
+                  </Text>
+                </View>
+              </TouchableOpacity>
+              <View style={styles.line} />
+            </View>
+
+            {error && <Text style={styles.error}>{error}</Text>}
+            {/* <Button
                 title="UPDATE"
                 style={styles.button}
                 textStyle={styles.buttonText}
                 onPress={this.handleSubmit}
-              />
-            </View>
-          </ScrollView>
-        </SideMenu>
+              /> */}
+          </View>
+        </ScrollView>
+        {/* </SideMenu> */}
         <PickLocation
           ref={ref => (this.locRef = ref)}
           getLocation={this.getLocation}
@@ -283,7 +364,17 @@ export class ProfileScreen extends Component {
 const mapStateToProps = ({ auth }) => ({
   loading: auth.loading,
   error: auth.updateProfileError,
-  user: auth.user
+  // user: auth.user
+  user: {
+    user: {
+      location: "Location",
+      username: "john123",
+      firstName: "John",
+      lastName: "Mic",
+      country: "US",
+      city: "NewYork"
+    }
+  }
 });
 
 export default connect(mapStateToProps)(ProfileScreen);

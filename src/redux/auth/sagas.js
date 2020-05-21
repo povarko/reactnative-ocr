@@ -39,7 +39,6 @@ export function* loginRequest() {
       const message = extractErrorMessage(err);
       // yield put(authActions.loginError(message));
       navigationService.navigate("AuthLoading");
-
     } finally {
       yield put(authActions.authLoading(false));
     }
@@ -133,6 +132,7 @@ function* registerRequest() {
       yield put(authActions.authLoading(true));
       yield put(authActions.registerError(null));
 
+      debugger;
       const { data } = yield authService.register(payload);
       const userData = { ...data.data, tokenTimestamp: moment() };
 

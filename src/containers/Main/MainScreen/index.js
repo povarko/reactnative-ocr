@@ -19,6 +19,33 @@ import { connect } from "react-redux";
 import styles from "./styles";
 
 class MainScreen extends Component {
+  static navigationOptions = {
+    title: "Profile",
+    // headerTitleStyle: {
+    //   fontWeight: 'normal',
+    // },
+    headerRight: (
+      <TouchableOpacity
+        activityOpacity={0.8}
+        // style={styles.userBoard}
+        onPress={() => alert("This is a button!")}
+        style={{ paddingRight: 20 }}
+      >
+        <Image source={Icons.goarrow} />
+      </TouchableOpacity>
+    ),
+    headerLeft: (
+      <TouchableOpacity
+        activityOpacity={0.8}
+        // style={styles.userBoard}
+        onPress={() => alert("This is a button!")}
+        style={{ paddingLeft: 20 }}
+      >
+        <Image source={Icons.goarrow} style={styles.flip} />
+      </TouchableOpacity>
+    )
+  };
+
   state = {
     checked: false,
     email: "",

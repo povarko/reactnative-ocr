@@ -11,7 +11,9 @@ import {
   EditScreen,
   ViewScreen,
   FilterScreen,
+  ExportScreen,
   CategoryScreen,
+  ProfileScreen,
   AuthLoadingScreen,
   ForgotPasswordScreen,
   PasswordResetEmailSentScreen,
@@ -35,7 +37,9 @@ const MainStackNavigator = createStackNavigator(
     ViewScreen: ViewScreen,
     EditScreen: EditScreen,
     FilterScreen: FilterScreen,
+    ExportScreen: { screen: ExportScreen },
     CategoryScreen: CategoryScreen,
+    ProfileScreen: ProfileScreen,
     MainTab: { screen: MainTabNavigaor, path: "" },
     VirtualShareCertificate: VirtualShareCertificateScreen,
     BuySellCertificate: BuySellScreen,
@@ -43,19 +47,15 @@ const MainStackNavigator = createStackNavigator(
   },
   {
     headerMode: "screen",
-    initialRouteName: "FilterScreen"
-  },
-  {
-    header: ({ scene, previous, navigation }) => {
-      const { options } = scene.descriptor;
-      const title =
-        options.headerTitle !== undefined
-          ? options.headerTitle
-          : options.title !== undefined
-          ? options.title
-          : scene.route.name;
-
-      return <p>{title}</p>;
+    initialRouteName: "MainScreen",
+    navigationOptions: {
+      headerStyle: {
+        backgroundColor: "#f9f9f9"
+      },
+      headerTintColor: "#fff",
+      headerTitleStyle: {
+        fontWeight: "normal"
+      }
     }
   }
 );

@@ -31,7 +31,7 @@ export default EStylesheet.create({
     width: 18
   },
   label: {
-    color: "#FFF",
+    color: "#000",
     fontSize: "1.063rem",
     textTransform: "uppercase",
     marginBottom: 6,

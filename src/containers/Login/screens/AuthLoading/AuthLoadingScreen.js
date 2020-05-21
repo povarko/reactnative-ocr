@@ -25,8 +25,8 @@ class AuthLoadingScreen extends Component {
     } else {
       // navigation.navigate("MainTab");
       // navigation.navigate("MainScreen");
-      navigation.navigate("FilterScreen");
-      // this.props.navigation.navigate("Login");
+      // navigation.navigate("FilterScreen");
+      this.props.navigation.navigate("Login");
     }
   };
 

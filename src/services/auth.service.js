@@ -22,7 +22,7 @@ function loginWithEmailAndPassword(email, password) {
 }
 
 function register(payload) {
-  return axios.post("/auth/register", payload);
+  return axios.post("/register.php", payload);
 }
 
 function confirmEmailRequest(token) {

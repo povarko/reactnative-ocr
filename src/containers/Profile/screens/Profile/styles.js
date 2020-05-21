@@ -8,10 +8,10 @@ import {
 export default EStylesheet.create({
   container: {
     flex: 1,
-    backgroundColor: Colors.textBlackColor
+    backgroundColor: "#f7f7f7"
   },
   content: {
-    backgroundColor: "#000"
+    backgroundColor: "#f7f7f7"
   },
   header: {
     flexDirection: "row",
@@ -53,10 +53,10 @@ export default EStylesheet.create({
   },
   inputContainer: {
     justifyContent: "center",
-    alignItems: "center",
+    // alignItems: "center",
     width: "100%",
     // position: "absolute",
-    marginTop: -30,
+    marginTop: 30,
     flex: 1
   },
   usernameContainer: {
@@ -72,7 +72,7 @@ export default EStylesheet.create({
     paddingHorizontal: 20
   },
   inputLarge: {
-    color: "#FFF",
+    color: "#000",
     fontSize: "2.0rem",
     fontFamily: Fonts.type.rajdhaniBold,
     padding: 0
@@ -82,8 +82,13 @@ export default EStylesheet.create({
     fontSize: "1.125rem",
     letterSpacing: 0
   },
+  line: {
+    width: wp("100%") - 40,
+    height: 1,
+    backgroundColor: "#c8c8ca"
+  },
   inputSmall: {
-    color: "#FFF",
+    color: "#000",
     fontFamily: Fonts.type.rajdhaniMedium,
     fontSize: "1.125rem"
   },
@@ -109,7 +114,7 @@ export default EStylesheet.create({
   locationLabel: {
     fontFamily: Fonts.type.rajdhaniSemibold,
     letterSpacing: 0,
-    color: "#FFF",
+    color: "#000",
     fontSize: "1.125rem",
     marginBottom: 5,
     marginLeft: 10
@@ -118,7 +123,7 @@ export default EStylesheet.create({
     fontFamily: Fonts.type.rajdhaniMedium,
     fontSize: "1.125rem",
     marginLeft: 5,
-    color: "#FFFFFF"
+    color: "#000"
   },
   locationChange: {
     textDecorationLine: "underline",

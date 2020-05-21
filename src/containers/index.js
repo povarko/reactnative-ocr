@@ -63,7 +63,8 @@ export {
   EditScreen,
   CategoryScreen,
   ViewScreen,
-  FilterScreen
+  FilterScreen,
+  ExportScreen
 } from "./Main";
 
 export {
