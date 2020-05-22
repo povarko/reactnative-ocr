@@ -16,7 +16,7 @@ class AuthLoadingScreen extends Component {
     if (auth.user) {
       this.props.navigation.navigate("MainScreen");
     } else {
-      this.props.navigation.navigate("MainScreen"); //Login
+      this.props.navigation.navigate("Login"); //Login
     }
   };
 

@@ -6,7 +6,7 @@ import AppNavigator from "@AppNavigators";
 import createStore from "@AppRedux/createStore";
 import { stylesheetConfig, axiosConfig } from "@AppConfig";
 import { authActions } from "@AppRedux/actions";
-import { navigationService, NotificationService } from "@AppServices";
+import { navigationService } from "@AppServices";
 import axios from "axios";
 import appConfig from "./app.json";
 import reactotron from "reactotron-react-native";
@@ -71,7 +71,6 @@ export default class App extends Component {
     this.state = {
       senderId: appConfig.senderID
     };
-    this.notif = new NotificationService(this.onRegister, this.onNotification);
   }
   componentDidMount() {
     Linking.addEventListener("url", this._handleOpenURL);

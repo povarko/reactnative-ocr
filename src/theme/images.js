@@ -2,31 +2,8 @@ const images = {
   background: require("@Assets/images/background.png"),
   logo: require("@Assets/images/logo.png"),
   logoWithTitle: require("@Assets/images/logo_with_title.png"),
-  dummyAthlete1: require("@Assets/images/dummy_athlete_1.png"),
-  dummyAthlete2: require("@Assets/images/dummy_athlete_2.png"),
-  dummyAthlete3: require("@Assets/images/dummy_athlete_3.png"),
-  lionelMessi: require("@Assets/images/lionel-messi.png"),
-  conorMcgregor: require("@Assets/images/Conor-McGregor.png"),
-  tomBrady: require("@Assets/images/tom-brady.png"),
-  mariaSharapova: require("@Assets/images/Maria-Sharapova7.png"),
-  lebronJames: require("@Assets/images/lebron-james.png"),
-  playerCertificate: require("@Assets/images/player-stat.png"),
-  teams: require("@Assets/images/teams.png"),
-  team1: require("@Assets/images/team_1.png"),
-  team2: require("@Assets/images/team_2.png"),
-  team3: require("@Assets/images/team_3.png"),
-  team4: require("@Assets/images/team_0.png"),
-  athletes: require("@Assets/images/athletes.png"),
-  athlete0: require("@Assets/images/athlete_0.jpg"),
-  athlete1: require("@Assets/images/athlete_1.jpg"),
-  athlete2: require("@Assets/images/athlete_2.png"),
-  athlete3: require("@Assets/images/athlete_3.jpg"),
-  athlete4: require("@Assets/images/athlete_4.jpg"),
-  dummyAD: require("@Assets/images/ad_1.png"),
   backgroundSmall: require("@Assets/images/backgroundSmall.png"),
-  user: require("@Assets/images/user.png"),
-  maps: require("@Assets/images/maps.png"),
-  limitOrder: require("@Assets/images/limitOrder.png")
+  user: require("@Assets/images/user.png")
 };
 
 export default images;

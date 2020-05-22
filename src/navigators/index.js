@@ -17,19 +17,11 @@ import {
   AuthLoadingScreen,
   ForgotPasswordScreen,
   PasswordResetEmailSentScreen,
-  VirtualShareCertificateScreen,
-  PlayerCertificateScreen,
-  TwoFAConfirmScreen,
   CreateNewPasswordScreen,
   RegisterScreen,
   RegisterEmailSentScreen,
-  RegistrationSuccessScreen,
-  EnterPinScreen,
-  TouchIdScreen
+  RegistrationSuccessScreen
 } from "@AppContainers";
-import MainTabNavigaor from "./MainTabNavigator";
-
-import { BuySellScreen } from "@AppContainers";
 
 const MainStackNavigator = createStackNavigator(
   {
@@ -39,11 +31,7 @@ const MainStackNavigator = createStackNavigator(
     FilterScreen: FilterScreen,
     ExportScreen: { screen: ExportScreen },
     CategoryScreen: CategoryScreen,
-    ProfileScreen: ProfileScreen,
-    MainTab: { screen: MainTabNavigaor, path: "" },
-    VirtualShareCertificate: VirtualShareCertificateScreen,
-    BuySellCertificate: BuySellScreen,
-    PlayerCertificate: PlayerCertificateScreen
+    ProfileScreen: ProfileScreen
   },
   {
     headerMode: "screen",
@@ -66,13 +54,10 @@ const AuthStackNavigator = createStackNavigator(
     Login: LoginScreen,
     ForgotPassword: ForgotPasswordScreen,
     PasswordResetEmailSent: PasswordResetEmailSentScreen,
-    TwofaConfirm: TwoFAConfirmScreen,
     CreateNewPassword: CreateNewPasswordScreen,
     Register: RegisterScreen,
     RegisterEmailSent: RegisterEmailSentScreen,
-    RegistrationSuccess: RegistrationSuccessScreen,
-    EnterPin: EnterPinScreen,
-    TouchId: TouchIdScreen
+    RegistrationSuccess: RegistrationSuccessScreen
   },
   {
     headerMode: "none",
