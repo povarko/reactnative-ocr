@@ -25,20 +25,27 @@ export function* loginRequest() {
         email,
         password
       );
-      const userData = { ...data.data, tokenTimestamp: moment() };
-      if (userData.user.emailConfirmed) {
-        axiosConfig({ authToken: userData.accessToken });
+
+      debugger;
+
+      if (data.status === 200) {
+        const userData = { ...data.data, tokenTimestamp: moment() };
+        // if (userData.user.emailConfirmed) {
+        axiosConfig({ authToken: data.token });
         yield put(authActions.loginSuccess(userData));
         navigationService.navigate("AuthLoading");
+        // } else {
+        // navigationService.navigate("RegisterEmailSent", {
+        //   email: email
+        // });
+        // }
       } else {
-        navigationService.navigate("RegisterEmailSent", {
-          email: email
-        });
+        yield put(authActions.loginError(data.msg));
       }
     } catch (err) {
       const message = extractErrorMessage(err);
-      // yield put(authActions.loginError(message));
-      navigationService.navigate("AuthLoading");
+      yield put(authActions.loginError(data.msg));
+      // navigationService.navigate("AuthLoading");
     } finally {
       yield put(authActions.authLoading(false));
     }
@@ -132,23 +139,22 @@ function* registerRequest() {
       yield put(authActions.authLoading(true));
       yield put(authActions.registerError(null));
 
-      debugger;
       const { data } = yield authService.register(payload);
-      const userData = { ...data.data, tokenTimestamp: moment() };
+      if (data.status === 200) {
+        const userData = {
+          ...data.data,
+          accessToken: data.token,
+          tokenTimestamp: moment()
+        };
 
-      yield put(authActions.registerSuccess(payload.email));
-      // axiosConfig({ authToken: userData.accessToken });
-      // if (userData.user.emailConfirmed) {
-      //   yield put(authActions.loginSuccess(userData));
-      // } else {
-      yield put(authActions.loginSuccess(userData));
+        yield put(authActions.registerSuccess(payload.email));
+        yield put(authActions.loginSuccess(userData));
 
-      axiosConfig({ authToken: userData.accessToken });
-      navigationService.navigate("RegisterEmailSent", {
-        email: payload.email
-        // token: userData.accessToken,
-      });
-      // }
+        axiosConfig({ authToken: userData.accessToken });
+        navigationService.navigate("AuthLoading");
+      } else {
+        yield put(authActions.registerError(data.msg));
+      }
     } catch (err) {
       const message = extractErrorMessage(err);
       yield put(authActions.registerError(message));

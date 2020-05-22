@@ -19,31 +19,33 @@ import { connect } from "react-redux";
 import styles from "./styles";
 
 class MainScreen extends Component {
-  static navigationOptions = {
-    title: "Profile",
-    // headerTitleStyle: {
-    //   fontWeight: 'normal',
-    // },
-    headerRight: (
-      <TouchableOpacity
-        activityOpacity={0.8}
-        // style={styles.userBoard}
-        onPress={() => alert("This is a button!")}
-        style={{ paddingRight: 20 }}
-      >
-        <Image source={Icons.goarrow} />
-      </TouchableOpacity>
-    ),
-    headerLeft: (
-      <TouchableOpacity
-        activityOpacity={0.8}
-        // style={styles.userBoard}
-        onPress={() => alert("This is a button!")}
-        style={{ paddingLeft: 20 }}
-      >
-        <Image source={Icons.goarrow} style={styles.flip} />
-      </TouchableOpacity>
-    )
+  static navigationOptions = ({ navigation }) => {
+    return {
+      title: "Your Receipts",
+      // headerTitleStyle: {
+      //   fontWeight: 'normal',
+      // },
+      headerRight: (
+        <TouchableOpacity
+          activityOpacity={0.8}
+          // style={styles.userBoard}
+          onPress={() => navigation.push("ExportScreen")}
+          style={{ paddingRight: 20 }}
+        >
+          <Image source={Icons.threedot} />
+        </TouchableOpacity>
+      ),
+      headerLeft: (
+        <TouchableOpacity
+          activityOpacity={0.8}
+          // style={styles.userBoard}
+          onPress={() => navigation.push("ProfileScreen")}
+          style={{ paddingLeft: 20 }}
+        >
+          <Image source={Icons.arrowleft} />
+        </TouchableOpacity>
+      )
+    };
   };
 
   state = {
@@ -142,7 +144,7 @@ class MainScreen extends Component {
     const { error } = this.props;
 
     const dummy = [1, 2, 3, 4, 5, 6, 7, 8];
-    const isEmpty = false;
+    const isEmpty = true;
 
     return (
       <ImageBackground style={styles.container}>
@@ -159,7 +161,7 @@ class MainScreen extends Component {
                   borderRadius: 20
                 }}
                 // style={styles.proceedButtonView}
-                // onPress={() => this.goToProcess()}
+                onPress={() => this.props.navigation.push("EditScreen")}
               >
                 {/* <Image source={Icons.addreceipt} style={{marginTop: 30}}/>                 */}
                 <Text

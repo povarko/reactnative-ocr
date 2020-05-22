@@ -18,7 +18,7 @@ export const authService = {
 };
 
 function loginWithEmailAndPassword(email, password) {
-  return axios.post("/auth/login", { email, password });
+  return axios.post("/login.php", { email, password });
 }
 
 function register(payload) {

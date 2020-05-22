@@ -21,6 +21,22 @@ import FontAwesome5 from "react-native-vector-icons/FontAwesome5";
 import DatePicker from "react-native-datepicker";
 
 class ExportScreen extends Component {
+  static navigationOptions = ({ navigation }) => {
+    return {
+      title: "Export",
+      headerLeft: (
+        <TouchableOpacity
+          activityOpacity={0.8}
+          // style={styles.userBoard}
+          onPress={() => navigation.goBack()}
+          style={{ paddingLeft: 20 }}
+        >
+          <Image source={Icons.arrowleft} style={styles.flip} />
+        </TouchableOpacity>
+      )
+    };
+  };
+
   state = {
     current: "all",
     datefrom: "2020-1-1",

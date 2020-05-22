@@ -47,9 +47,14 @@ export default EStylesheet.create({
     borderRadius: 25,
     backgroundColor: "transparent",
     borderWidth: 1,
-    borderColor: Colors.mainColor
+    borderColor: Colors.gray
   },
   buttonText: {
+    fontFamily: Fonts.type.rajdhaniBold,
+    color: Colors.gray,
+    fontSize: "1.2rem"
+  },
+  validButtonText: {
     fontFamily: Fonts.type.rajdhaniBold,
     color: Colors.btnTitleColor,
     fontSize: "1.2rem"
@@ -58,7 +63,9 @@ export default EStylesheet.create({
     width: 290,
     height: 48,
     borderRadius: 25,
-    backgroundColor: Colors.malachite
+    backgroundColor: "transparent",
+    borderWidth: 1,
+    borderColor: Colors.mainColor
   },
   overlay: {
     width: wp("100%"),

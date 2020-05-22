@@ -47,7 +47,7 @@ class RegisterScreen extends Component {
     } = this.state;
     const isValidEmail = validator.isEmail(email);
     const isValidPassword =
-      validator.isLength(password, { min: 6 }) && password === confirmPassword;
+      validator.isLength(password, { min: 4 }) && password === confirmPassword;
 
     if (firstName && lastName && isValidEmail && isValidPassword && checked) {
       return true;
@@ -130,9 +130,15 @@ class RegisterScreen extends Component {
                 <Button
                   onPress={this.handleSubmit}
                   title="Create Account"
-                  style={[isValidForm ? styles.validButton : styles.button]}
-                  textStyle={styles.buttonText}
-                  />
+                  style={[
+                    this.isValidForm() ? styles.validButton : styles.button
+                  ]}
+                  textStyle={[
+                    this.isValidForm()
+                      ? styles.validButtonText
+                      : styles.buttonText
+                  ]}
+                />
               </View>
             </ScrollView>
             {this.props.loading && (

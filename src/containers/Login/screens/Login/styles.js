@@ -98,7 +98,7 @@ export default EStylesheet.create({
   inputError: {
     fontSize: "0.9rem",
     textAlign: "center",
-    top: -10,
+    // top: -10,
     color: "red",
     fontFamily: Fonts.type.rajdhaniSemibold
   },

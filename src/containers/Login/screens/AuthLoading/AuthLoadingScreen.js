@@ -14,19 +14,9 @@ class AuthLoadingScreen extends Component {
   authloading = () => {
     const { auth, navigation } = this.props;
     if (auth.user) {
-      if (auth.usePin) {
-        navigation.navigate("EnterPin");
-      } else if (auth.useTouchId) {
-        navigation.navigate("TouchId");
-      } else {
-        axiosConfig({ authToken: auth.user.accessToken });
-        navigation.navigate("MainTab");
-      }
+      this.props.navigation.navigate("MainScreen");
     } else {
-      // navigation.navigate("MainTab");
-      // navigation.navigate("MainScreen");
-      // navigation.navigate("FilterScreen");
-      this.props.navigation.navigate("Login");
+      this.props.navigation.navigate("MainScreen"); //Login
     }
   };
 

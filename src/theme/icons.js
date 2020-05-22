@@ -1,6 +1,8 @@
 const icons = {
+  threedot: require("@Assets/icons/threedot.png"),
   plus: require("@Assets/icons/plus.png"),
   goarrow: require("@Assets/icons/goarrow.png"),
+  arrowleft: require("@Assets/icons/arrow-left.png"),
   filter: require("@Assets/icons/filter.png"),
   addreceipt: require("@Assets/icons/add-receipt.png"),
   spinner: require("@Assets/icons/spinner.png"),

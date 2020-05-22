@@ -66,7 +66,7 @@ export class LoginScreen extends Component {
     const { email, password } = this.state;
     const { dispatch } = this.props;
     const isValidEmail = validator.isEmail(email.trim());
-    const isValidPassword = validator.isLength(password, { min: 6 });
+    const isValidPassword = validator.isLength(password, { min: 4 });
 
     if (this.props.loading) return;
 
@@ -86,7 +86,7 @@ export class LoginScreen extends Component {
     const errorMessage = this.getErrorMessage(this.props.loginError);
 
     return (
-      <ImageBackground  style={styles.container}>
+      <ImageBackground style={styles.container}>
         <KeyboardAwareScrollView scrollEnabled={false}>
           <SafeAreaView
             forceInset={{ top: "always" }}
@@ -127,7 +127,6 @@ export class LoginScreen extends Component {
               />
             </View>
 
-
             {/* <View style={styles.divider}>
               <View style={styles.line} />
               <Text style={styles.dividerText}>OR</Text>
@@ -156,13 +155,13 @@ export class LoginScreen extends Component {
                   {" "}
                   Password
                 </Text>
-              </Text>              
-              <Text style={[styles.info, {marginTop: 10}]}>
+              </Text>
+              <Text style={[styles.info, { marginTop: 10 }]}>
                 By signing in you agree to our{" "}
                 <Text style={styles.linkColor} onPress={this.openTerms}>
                   Terms & Privacy
                 </Text>
-                .                
+                .
               </Text>
             </View>
           </SafeAreaView>

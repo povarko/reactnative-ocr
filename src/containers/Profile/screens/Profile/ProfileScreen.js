@@ -32,31 +32,33 @@ import { authActions } from "@AppRedux/actions";
 import { connect } from "react-redux";
 
 export class ProfileScreen extends Component {
-  static navigationOptions = {
-    title: "Profile",
-    // headerTitleStyle: {
-    //   fontWeight: 'normal',
-    // },
-    headerRight: (
-      <TouchableOpacity
-        activityOpacity={0.8}
-        // style={styles.userBoard}
-        onPress={() => alert("This is a button!")}
-        style={{ paddingRight: 20 }}
-      >
-        <Image source={Icons.goarrow} />
-      </TouchableOpacity>
-    ),
-    headerLeft: (
-      <TouchableOpacity
-        activityOpacity={0.8}
-        // style={styles.userBoard}
-        onPress={() => alert("This is a button!")}
-        style={{ paddingLeft: 20 }}
-      >
-        <Text style={{ color: "#02d0e3", fontSize: 16 }}>Edit</Text>
-      </TouchableOpacity>
-    )
+  static navigationOptions = ({ navigation }) => {
+    return {
+      title: "Profile",
+      // headerTitleStyle: {
+      //   fontWeight: 'normal',
+      // },
+      headerRight: (
+        <TouchableOpacity
+          activityOpacity={0.8}
+          // style={styles.userBoard}
+          onPress={() => navigation.goBack()}
+          style={{ paddingRight: 20 }}
+        >
+          <Image source={Icons.goarrow} />
+        </TouchableOpacity>
+      ),
+      headerLeft: (
+        <TouchableOpacity
+          activityOpacity={0.8}
+          // style={styles.userBoard}
+          onPress={() => {}}
+          style={{ paddingLeft: 20 }}
+        >
+          <Text style={{ color: "#02d0e3", fontSize: 16 }}>Edit</Text>
+        </TouchableOpacity>
+      )
+    };
   };
 
   constructor(props) {

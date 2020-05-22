@@ -19,6 +19,35 @@ import { connect } from "react-redux";
 import styles from "./styles";
 
 class EditScreen extends Component {
+  static navigationOptions = ({ navigation }) => {
+    return {
+      title: "Edit Receipt",
+      // headerTitleStyle: {
+      //   fontWeight: 'normal',
+      // },
+      headerRight: (
+        <TouchableOpacity
+          activityOpacity={0.8}
+          // style={styles.userBoard}
+          onPress={() => alert("Save")}
+          style={{ paddingRight: 20 }}
+        >
+          <Text style={{ color: "#02d0e3", fontSize: 16 }}>Save</Text>
+        </TouchableOpacity>
+      ),
+      headerLeft: (
+        <TouchableOpacity
+          activityOpacity={0.8}
+          // style={styles.userBoard}
+          onPress={() => navigation.goBack()}
+          style={{ paddingLeft: 20 }}
+        >
+          <Image source={Icons.arrowleft} />
+        </TouchableOpacity>
+      )
+    };
+  };
+
   state = {
     checked: false,
     email: "",
@@ -73,7 +102,11 @@ class EditScreen extends Component {
       <TouchableOpacity
         activityOpacity={0.8}
         // style={styles.userBoard}
-        onPress={() => {}}
+        onPress={() => {
+          if (index === 1) {
+            this.props.navigation.push("CategoryScreen");
+          }
+        }}
       >
         {/* <View style={{backgroundColor:"#333", flex: 1, marginBottom: 80}}> */}
         <View style={{ marginLeft: 20, marginRight: 20, height: 60 }}>

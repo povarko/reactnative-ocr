@@ -19,6 +19,22 @@ import { connect } from "react-redux";
 import styles from "./styles";
 
 class CategoryScreen extends Component {
+  static navigationOptions = ({ navigation }) => {
+    return {
+      title: "Category",
+      headerLeft: (
+        <TouchableOpacity
+          activityOpacity={0.8}
+          // style={styles.userBoard}
+          onPress={() => navigation.goBack()}
+          style={{ paddingLeft: 20 }}
+        >
+          <Image source={Icons.arrowleft} style={styles.flip} />
+        </TouchableOpacity>
+      )
+    };
+  };
+
   state = {
     newcategory: "",
     current: "Unpaid"
