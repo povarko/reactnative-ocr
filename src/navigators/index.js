@@ -8,6 +8,7 @@ import {
   SplashScreen,
   LoginScreen,
   MainScreen,
+  UploadScreen,
   EditScreen,
   ViewScreen,
   FilterScreen,
@@ -26,6 +27,7 @@ import {
 const MainStackNavigator = createStackNavigator(
   {
     MainScreen: MainScreen,
+    UploadScreen: UploadScreen,
     ViewScreen: ViewScreen,
     EditScreen: EditScreen,
     FilterScreen: FilterScreen,

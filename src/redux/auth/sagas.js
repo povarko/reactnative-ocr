@@ -29,7 +29,11 @@ export function* loginRequest() {
       debugger;
 
       if (data.status === 200) {
-        const userData = { ...data.data, tokenTimestamp: moment() };
+        const userData = {
+          ...data.data,
+          authToken: data.token,
+          tokenTimestamp: moment()
+        };
         // if (userData.user.emailConfirmed) {
         axiosConfig({ authToken: data.token });
         yield put(authActions.loginSuccess(userData));

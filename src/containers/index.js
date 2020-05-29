@@ -16,7 +16,8 @@ export {
   CategoryScreen,
   ViewScreen,
   FilterScreen,
-  ExportScreen
+  ExportScreen,
+  UploadScreen
 } from "./Main";
 
 export {

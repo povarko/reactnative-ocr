@@ -17,8 +17,24 @@ import validator from "validator";
 import { authActions } from "@AppRedux/actions";
 import { connect } from "react-redux";
 import styles from "./styles";
+import { navigationService, NotificationService } from "@AppServices";
 
 class EditScreen extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      checked: false,
+      email: "",
+      firstName: "",
+      lastName: "",
+      password: "",
+      confirmPassword: "",
+      validated: false,
+      receipt: props.navigation.getParam("receipt")
+      // email: registerEmail
+    };
+  }
+
   static navigationOptions = ({ navigation }) => {
     return {
       title: "Edit Receipt",
@@ -39,23 +55,13 @@ class EditScreen extends Component {
         <TouchableOpacity
           activityOpacity={0.8}
           // style={styles.userBoard}
-          onPress={() => navigation.goBack()}
+          onPress={() => navigationService.navigate("MainScreen")}
           style={{ paddingLeft: 20 }}
         >
           <Image source={Icons.arrowleft} />
         </TouchableOpacity>
       )
     };
-  };
-
-  state = {
-    checked: false,
-    email: "",
-    firstName: "",
-    lastName: "",
-    password: "",
-    confirmPassword: "",
-    validated: false
   };
 
   onChange = fieldName => {
@@ -187,9 +193,12 @@ class EditScreen extends Component {
     const dummy = [
       { title: "Status", content: "Unpaid" },
       { title: "Category", content: "Assign Category" },
-      { title: "Date", content: "09/05/2020" },
-      { title: "Receept Number", content: "1838563" },
-      { title: "Invoiced by", content: "Eureka Operations Pty Ltd" },
+      { title: "Date", content: this.state.receipt.receipt_date },
+      { title: "Receept Number", content: this.state.receipt.receipt_number },
+      { title: "Invoiced by", content: this.state.receipt.invoiced_by },
+      { title: "ABN", content: this.state.receipt.ABN },
+      { title: "Address", content: this.state.receipt.address },
+      { title: "Telephone", content: this.state.receipt.telephone },
       { title: "Item 1", content: "Unleaded Petrol", price: "$30.00" }
     ];
     const imageurl = "https://homepages.cae.wisc.edu/~ece533/images/boat.png";

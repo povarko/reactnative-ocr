@@ -14,9 +14,10 @@ import { Images, Colors, Icons } from "@AppTheme";
 import { SafeAreaView } from "react-navigation";
 import { CheckBox } from "react-native-elements";
 import validator from "validator";
-import { authActions } from "@AppRedux/actions";
+import { imageUploadAction } from "@AppRedux/actions";
 import { connect } from "react-redux";
 import styles from "./styles";
+import ImagePicker from "react-native-image-crop-picker";
 
 class MainScreen extends Component {
   static navigationOptions = ({ navigation }) => {
@@ -49,6 +50,7 @@ class MainScreen extends Component {
   };
 
   state = {
+    imageSource: null,
     checked: false,
     email: "",
     firstName: "",
@@ -139,6 +141,43 @@ class MainScreen extends Component {
     );
   };
 
+  pickImage = () => {
+    // ImagePicker.openCamera({
+    //   // width: 300,
+    //   // height: 400,
+    //   cropping: false,
+    //   includeBase64: true,
+    //   mediaType: "photo"
+    // })
+    //   .then(image => {
+    //     alert(image.sourceURL);
+    //     this.setState({ imageSource: image });
+    //   })
+    //   .catch(err => {
+    //     alert("error");
+    //   });
+
+    const self = this;
+
+    ImagePicker.openPicker({
+      width: 300,
+      height: 400,
+      cropping: false,
+      includeBase64: true,
+      mediaType: "photo"
+    })
+      .then(image => {
+        // this.setState({ imageSource: image });
+        self.props.imageUploadAction(`data:${image.mime};base64,${image.data}`);
+        self.props.navigation.push("UploadScreen");
+      })
+      .catch(err => {});
+  };
+
+  onAdd = () => {
+    this.pickImage();
+  };
+
   render() {
     const isValidForm = this.isValidForm();
     const { error } = this.props;
@@ -161,7 +200,7 @@ class MainScreen extends Component {
                   borderRadius: 20
                 }}
                 // style={styles.proceedButtonView}
-                onPress={() => this.props.navigation.push("EditScreen")}
+                onPress={() => this.onAdd()}
               >
                 {/* <Image source={Icons.addreceipt} style={{marginTop: 30}}/>                 */}
                 <Text
@@ -265,7 +304,7 @@ class MainScreen extends Component {
                 activeOpacity={0.8}
                 style={{ flex: 1 }}
                 // style={styles.proceedButtonView}
-                // onPress={() => this.goToProcess()}
+                onPress={() => this.onAdd()}
               >
                 <Image source={Icons.addreceipt} style={{ marginTop: 10 }} />
               </TouchableOpacity>
@@ -281,4 +320,7 @@ const mapStateToProps = ({ auth }) => ({
   loading: auth.loading,
   error: auth.registerError
 });
-export default connect(mapStateToProps)(MainScreen);
+export default connect(
+  mapStateToProps,
+  { imageUploadAction }
+)(MainScreen);
